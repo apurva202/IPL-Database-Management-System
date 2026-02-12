@@ -2,6 +2,8 @@
 
 A modular command-line based CRUD application built using Python and Pandas to manage IPL player statistics. The system allows users to perform operations such as adding, modifying, deleting, searching, and analyzing player data stored in CSV format.
 
+---
+
 ## 🚀 Features
 
 - Create, Read, Update, Delete (CRUD) operations
@@ -12,18 +14,22 @@ A modular command-line based CRUD application built using Python and Pandas to m
 - Separate Admin and User modules
 - Modular project structure for better maintainability
 
+---
+
 ## 🛠 Technologies Used
 
-- Python  
-- Pandas  
-- Matplotlib  
-- CSV File Handling  
+- Python
+- Pandas
+- Matplotlib
+- pwinput (for secure password input)
+
+---
 
 ## 📂 Project Structure
 
 ipl-database-management-system/  
 │  
-├── IPL.py  
+├── IPL.py                # Main entry point  
 ├── ADD.py  
 ├── DELETE.py  
 ├── MODIFY.py  
@@ -32,31 +38,40 @@ ipl-database-management-system/
 ├── Graph.py  
 ├── AdminLogin.py  
 ├── UserLogin.py  
-├── modules/  
-├── CSV/  
+├── modules/              # Supporting modules  
+├── CSV/                  # Data storage files  
+├── requirements.txt  
+├── .gitignore  
 └── README.md  
+
+---
 
 ## ▶ How to Run
 
-1. Install required libraries:
+1. Clone the repository
 
-pip install pandas matplotlib
+2. Navigate into the project folder
 
-2. Run the main file:
+3. Install dependencies:
+
+pip install -r requirements.txt
+
+4. Run the application:
 
 python IPL.py
 
-## 📊 Sample Functionalities
+---
+
+## 📊 Functionalities
 
 - Add new player records  
 - Update player statistics  
 - Delete existing records  
-- Search player by name  
-- Generate bar charts and histograms for analysis  
+- Search players by name  
+- Generate performance graphs using Matplotlib   
 
-## 🔮 Future Improvements
+---
 
-- MySQL database integration  
-- GUI version  
-- Web-based implementation using Flask  
-- Advanced statistical analysis
+## 👨‍💻 Author
+
+Apurva Patil
